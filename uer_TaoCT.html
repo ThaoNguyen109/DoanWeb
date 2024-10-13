@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm món mới</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+                <img src="logo.png" alt="Bếp Ngoan Xinh Yêu Logo" class="logo-image">
+                <h1>Ngoan xinh yêu</h1>
+            </div>
+            <ul class="menu">
+                <li><a href="#"><i class="icon home"></i> Trang chủ</a></li>
+                <li><a href="#"><i class="icon search"></i> Tìm kiếm</a></li>
+                <li><a href="#"><i class="icon add"></i> Thêm món mới</a></li>
+                <li><a href="#"><i class="icon save"></i> Món đã lưu</a></li>
+                <li><a href="#"><i class="icon profile"></i> Món của tôi</a></li>
+            </ul>
+        </div>
+
+        <!-- Main content -->
+        <div class="main-content">
+            <h2>Thêm món mới</h2>
+            <div class="upload-image">
+                <div class="upload-box">
+                    <i class="upload-icon"></i>
+                    <p>Bạn đăng hình món ăn ở đây ạ!</p>
+                </div>
+            </div>
+            
+            <form class="add-recipe-form">
+                <div class="form-group">
+                    <label for="dish-name">Tên món ăn của bạn là gì nhỉ?</label>
+                    <input type="text" id="dish-name" placeholder="Value">
+                </div>
+
+                <div class="form-group">
+                    <label for="thoughts">Hãy chia sẻ một vài suy nghĩ của bạn ở đây nha</label>
+                    <textarea id="thoughts" rows="4"></textarea>
+                </div>
+
+                <div class="form-group-row">
+                    <div class="form-group">
+                        <label for="servings">Khẩu phần</label>
+                        <input type="text" id="servings" placeholder="Value">
+                    </div>
+                    <div class="form-group">
+                        <label for="cooking-time">Thời gian nấu</label>
+                        <input type="text" id="cooking-time" placeholder="Value">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="ingredients">Nguyên liệu</label>
+                    <textarea id="ingredients" rows="3"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="steps">Các bước làm</label>
+                    <textarea id="steps" rows="5"></textarea>
+                </div>
+
+                <div class="buttons">
+                    <button class="post-btn">Đăng</button>
+                    <button class="delete-btn">Xóa</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
